@@ -3,9 +3,9 @@
   --german-fondo:  rgba(239, 68, 68, 0.12);
   --german-borde:  rgba(239, 68, 68, 0.22);
 
-  --angel:         #38bdf8;
-  --angel-fondo:   rgba(56, 189, 248, 0.12);
-  --angel-borde:   rgba(56, 189, 248, 0.22);
+  --noice:         #38bdf8;
+  --noice-fondo:   rgba(56, 189, 248, 0.12);
+  --noice-borde:   rgba(56, 189, 248, 0.22);
 
   --dorado:        gold;
   --fondo:         #0d0d0d;
@@ -69,14 +69,14 @@ header {
   border-radius: 50%;
 }
 .punto-german { background: var(--german); }
-.punto-angel  { background: var(--angel); }
+.punto-noice  { background: var(--noice); }
 
 .puntos-grandes {
   font-size:   1.5rem;
   line-height: 1;
 }
 .puntos-german { color: var(--german); }
-.puntos-angel  { color: var(--angel); }
+.puntos-noice  { color: var(--noice); }
 
 .elguion {
   color:     var(--texto-apagado);
@@ -189,9 +189,9 @@ main {
   border-right: 2px solid var(--german-borde);
 }
 
-.panel-angel {
-  background:  var(--angel-fondo);
-  border-left: 2px solid var(--angel-borde);
+.panel-noice {
+  background:  var(--noice-fondo);
+  border-left: 2px solid var(--noice-borde);
 }
 
 .nombre-jugador {
@@ -201,7 +201,7 @@ main {
   text-transform: uppercase;
 }
 .panel-german .nombre-jugador { color: var(--german); }
-.panel-angel  .nombre-jugador { color: var(--angel); }
+.panel-noice  .nombre-jugador { color: var(--noice); }
 
 /* Predicción grande */
 .prediccion {
@@ -362,6 +362,6 @@ main {
 @media (max-width: 640px) {
   .fila-partido          { grid-template-columns: 1fr; }
   .panel-german          { border-right: none; border-bottom: 2px solid var(--german-borde); }
-  .panel-angel           { border-left: none;  border-top: 2px solid var(--angel-borde); }
+  .panel-noice           { border-left: none;  border-top: 2px solid var(--noice-borde); }
   header                 { flex-direction: column; }
 }
