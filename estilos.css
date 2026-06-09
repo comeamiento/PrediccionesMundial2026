@@ -224,11 +224,6 @@ main {
   justify-content: center;
   gap:             0.5rem;
   background:      var(--campo);
-  background-image: repeating-linear-gradient(
-    90deg,
-    transparent, transparent 49%,
-    rgba(255,255,255,0.03) 49%, rgba(255,255,255,0.03) 51%
-  );
   position: relative;
 }
 
