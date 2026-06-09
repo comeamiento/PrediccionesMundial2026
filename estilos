@@ -1,0 +1,372 @@
+:root {
+  --german:        #ef4444;
+  --german-fondo:  rgba(239, 68, 68, 0.12);
+  --german-borde:  rgba(239, 68, 68, 0.22);
+
+  --angel:         #38bdf8;
+  --angel-fondo:   rgba(56, 189, 248, 0.12);
+  --angel-borde:   rgba(56, 189, 248, 0.22);
+
+  --dorado:        gold;
+  --fondo:         #0d0d0d;
+  --tarjeta:       #161616;
+  --borde:         #282828;
+  --texto:         #f0f0f0;
+  --texto-apagado: #666;
+  --campo:         #0f2210;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background:  var(--fondo);
+  color:       var(--texto);
+  font-family: 'Bebas Neue', sans-serif;
+  min-height:  100vh;
+}
+
+
+/* ── CABECERA ── */
+header {
+  background:      var(--tarjeta);
+  border-bottom:   1px solid var(--borde);
+  padding:         1.2rem 2rem;
+  display:         flex;
+  align-items:     center;
+  justify-content: space-between;
+  gap:             1rem;
+  flex-wrap:       wrap;
+  position:        sticky;
+  top:             0;
+  z-index:         100;
+}
+
+.titulo-cabecera {
+  font-size:      2rem;
+  letter-spacing: 0.06em;
+}
+
+.marcador {
+  display:     flex;
+  align-items: center;
+  gap:         0.9rem;
+}
+
+.jugador {
+  display:     flex;
+  align-items: center;
+  gap:         0.5rem;
+  font-size:   1.2rem;
+}
+
+.punto {
+  width:         9px;
+  height:        9px;
+  border-radius: 50%;
+}
+.punto-german { background: var(--german); }
+.punto-angel  { background: var(--angel); }
+
+.puntos-grandes {
+  font-size:   1.5rem;
+  line-height: 1;
+}
+.puntos-german { color: var(--german); }
+.puntos-angel  { color: var(--angel); }
+
+.elguion {
+  color:     var(--texto-apagado);
+  font-size: 1.3rem;
+}
+
+.timer-mundial {
+  font-size:      1.2rem;
+  font-weight:    700;
+  color:          var(--texto-apagado);
+  letter-spacing: 0.08em;
+}
+
+
+/* ── CONTENIDO ── */
+main {
+  max-width: 1600px;
+  margin:    0 auto;
+  padding:   2rem 2rem 4rem;
+}
+
+
+/* ── TABLA DE PUNTOS ── */
+.tabla-puntos {
+  background:    var(--tarjeta);
+  border:        1px solid var(--borde);
+  border-radius: 12px;
+  padding:       0.75rem 1.4rem;
+  margin-bottom: 2rem;
+  display:       flex;
+  flex-wrap:     nowrap;
+  overflow-x:    hidden;
+}
+
+.regla {
+  display:      flex;
+  align-items:  center;
+  gap:          0.4rem;
+  font-size:    0.74rem;
+  color:        var(--texto-apagado);
+  white-space:  nowrap;
+  border-right: 1px solid var(--borde);
+  padding:      0.3rem 0.4rem;
+  flex:         1;
+  min-width:    0;
+}
+.regla:first-child { padding-left: 0; }
+.regla:last-child  { border-right: none; padding-right: 0; }
+
+.regla .num-pts {
+  font-size:  1.1rem;
+  color:      YellowGreen;
+  min-width:  2rem;
+}
+
+
+/* ── BLOQUE DÍA ── */
+.bloque-dia { margin-bottom: 2.5rem; }
+
+.cabecera-dia {
+  display:       flex;
+  align-items:   center;
+  gap:           1rem;
+  margin-bottom: 1rem;
+}
+
+.etiqueta-dia {
+  font-size:      1.4rem;
+  letter-spacing: 0.1em;
+  color:          var(--dorado);
+  white-space:    nowrap;
+}
+
+.linea-dia {
+  flex:       1;
+  height:     1px;
+  background: var(--borde);
+}
+
+
+/* ── FILA DE PARTIDO
+   Tres columnas simétricas: German | Partido | Ángel
+── */
+.fila-partido {
+  display:               grid;
+  grid-template-columns: 1fr 1.6fr 1fr;
+  margin-bottom:         0.6rem;
+  border-radius:         12px;
+  overflow:              hidden;
+  border:                1px solid var(--borde);
+  background:            var(--tarjeta);
+  transition:            transform 0.12s ease;
+}
+.fila-partido:hover { transform: translateY(-1px); }
+
+
+/* ── PANELES LATERALES ── */
+.panel-lateral {
+  padding:        1.2rem 1.4rem;
+  display:        flex;
+  flex-direction: column;
+  align-items:    center;         /* centrado horizontal */
+  justify-content: center;        /* centrado vertical */
+  gap:            0.4rem;
+  text-align:     center;
+}
+
+.panel-german {
+  background:   var(--german-fondo);
+  border-right: 2px solid var(--german-borde);
+}
+
+.panel-angel {
+  background:  var(--angel-fondo);
+  border-left: 2px solid var(--angel-borde);
+}
+
+.nombre-jugador {
+  font-size:      0.75rem;
+  font-weight:    700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.panel-german .nombre-jugador { color: var(--german); }
+.panel-angel  .nombre-jugador { color: var(--angel); }
+
+/* Predicción grande */
+.prediccion {
+  font-size:      2.4rem;
+  letter-spacing: 0.05em;
+  line-height:    1;
+}
+.prediccion.pendiente {
+  color:     var(--texto-apagado);
+  font-size: 1.4rem;
+}
+
+
+/* ── PANEL CENTRAL: partido ── */
+.panel-centro {
+  padding:         1rem 0.5rem;
+  display:         flex;
+  flex-direction:  column;
+  align-items:     center;
+  justify-content: center;
+  gap:             0.5rem;
+  background:      var(--campo);
+  background-image: repeating-linear-gradient(
+    90deg,
+    transparent, transparent 49%,
+    rgba(255,255,255,0.03) 49%, rgba(255,255,255,0.03) 51%
+  );
+  position: relative;
+}
+
+.fila-equipos {
+  display:        flex;
+  flex-direction: column;
+  align-items:    center;
+  gap:            0.35rem;
+  position:       relative;
+  z-index:        1;
+}
+
+.fila-equipos-nombres {
+  display:     flex;
+  align-items: center;
+  gap:         0.55rem;
+  flex-wrap:   nowrap;
+}
+
+.nombre-equipo {
+  font-size:      1rem;
+  font-weight:    600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.texto-vs {
+  font-size:   0.7rem;
+  color:       var(--texto-apagado);
+  flex-shrink: 0;
+}
+
+/* Resultado real */
+.resultado-real {
+  font-size:      3rem;       /* más grande que en la versión de 4, tiene más espacio */
+  letter-spacing: 0.1em;
+  color:          #fff;
+  line-height:    1;
+  position:       relative;
+  z-index:        1;
+}
+.resultado-real.pendiente {
+  font-size: 1.6rem;
+  color:     var(--texto-apagado);
+}
+
+.hora-partido {
+  font-size: 0.75rem;
+  color:     var(--texto-apagado);
+  position:  relative;
+  z-index:   1;
+}
+
+
+/* ── BANDERAS ── */
+.bandera-wrap {
+  display:     inline-flex;
+  flex-shrink: 0;
+}
+
+.bandera-img {
+  width:         54px;
+  height:        36px;
+  object-fit:    contain;
+  border-radius: 3px;
+  border:        1px solid rgba(255,255,255,0.1);
+  display:       block;
+}
+
+.bandera-placeholder {
+  width:           54px;
+  height:          36px;
+  border-radius:   3px;
+  border:          1px solid rgba(255,255,255,0.1);
+  background:      #252525;
+  display:         none;
+  align-items:     center;
+  justify-content: center;
+  font-size:       0.48rem;
+  font-weight:     700;
+  color:           var(--texto-apagado);
+}
+
+
+/* ── BADGES ── */
+.badge {
+  display:        inline-flex;
+  align-items:    center;
+  gap:            0.2rem;
+  font-size:      0.67rem;
+  font-weight:    700;
+  padding:        2px 7px;
+  border-radius:  20px;
+  width:          fit-content;
+  letter-spacing: 0.02em;
+  border:         1px solid transparent;
+}
+
+.badge-10      { background: #d1fae5; color: #065f46; border-color: #10b981; }
+.badge-6       { background: #dcfce7; color: #166534; border-color: #22c55e; }
+.badge-5       { background: #ecfccb; color: #3f6212; border-color: #84cc16; }
+.badge-5b      { background: #fef9c3; color: #854d0e; border-color: #eab308; }
+.badge-3       { background: #fef3c7; color: #92400e; border-color: #f59e0b; }
+.badge-2       { background: #fed7aa; color: #9a3412; border-color: #f97316; }
+.badge-0       { background: #fee2e2; color: #7f1d1d; border-color: #dc2626; }
+.badge-pendiente { background: rgba(100,100,100,.08); color: var(--texto-apagado); border-color: rgba(100,100,100,.18); }
+
+
+/* ── LEYENDA ── */
+.leyenda {
+  display:         flex;
+  flex-wrap:       wrap;
+  gap:             0.7rem 1.4rem;
+  justify-content: center;
+  padding-top:     1.5rem;
+}
+
+.leyenda-item {
+  display:     flex;
+  align-items: center;
+  gap:         0.4rem;
+  font-size:   0.72rem;
+  color:       var(--texto-apagado);
+}
+
+.leyenda-punto {
+  width:         8px;
+  height:        8px;
+  border-radius: 50%;
+  display:       inline-block;
+  flex-shrink:   0;
+}
+
+
+/* ── MÓVIL ── */
+@media (max-width: 640px) {
+  .fila-partido          { grid-template-columns: 1fr; }
+  .panel-german          { border-right: none; border-bottom: 2px solid var(--german-borde); }
+  .panel-angel           { border-left: none;  border-top: 2px solid var(--angel-borde); }
+  header                 { flex-direction: column; }
+}
