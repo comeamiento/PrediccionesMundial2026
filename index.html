@@ -117,87 +117,84 @@
     }
 
     /* ── CONSTRUCCIÓN DE PÁGINA ── */
-    function construirPagina() {
-      let totalGerman = 0;
-      let totalnoice  = 0;
+function construirPagina() {
+  let totalGerman = 0;
+  let totalNoice  = 0;
 
-      const contenedor = document.getElementById('contenedor-partidos');
-      contenedor.innerHTML = '';
+  const contenedor = document.getElementById('contenedor-partidos');
+  contenedor.innerHTML = '';
 
-      PARTIDOS_POR_DIA.forEach(dia => {
+  PARTIDOS_POR_DIA.forEach(dia => {
 
-        const bloqueDia = document.createElement('div');
-        bloqueDia.className = 'bloque-dia';
-        bloqueDia.innerHTML = `
-          <div class="cabecera-dia">
-            <span class="etiqueta-dia">${dia.fecha}</span>
-            <div class="linea-dia"></div>
-          </div>`;
+    const bloqueDia = document.createElement('div');
+    bloqueDia.className = 'bloque-dia';
+    bloqueDia.innerHTML = `
+      <div class="cabecera-dia">
+        <span class="etiqueta-dia">${dia.fecha}</span>
+        <div class="linea-dia"></div>
+      </div>`;
 
-        dia.partidos.forEach(partido => {
+    dia.partidos.forEach(partido => {
 
-          const resGerman = calcularPuntos(partido.actual, partido.german);
-          const resAngel = calcularPuntos(partido.actual, partido.angel);
+      const resGerman = calcularPuntos(partido.actual, partido.german);
+      const resNoice  = calcularPuntos(partido.actual, partido.angel);  // lee partido.angel
 
-          if (resGerman !== null) totalGerman += puntosReales(resGerman);
-          if (resnoice  !== null) totalnoice  += puntosReales(resnoice);
+      if (resGerman !== null) totalGerman += puntosReales(resGerman);
+      if (resNoice  !== null) totalNoice  += puntosReales(resNoice);
 
-          const htmlResultado = partido.actual
-            ? `<span class="resultado-real">${partido.actual.home} - ${partido.actual.away}</span>`
-            : `<span class="resultado-real pendiente">? - ?</span>`;
+      const htmlResultado = partido.actual
+        ? `<span class="resultado-real">${partido.actual.home} - ${partido.actual.away}</span>`
+        : `<span class="resultado-real pendiente">? - ?</span>`;
 
-          const htmlPredGerman = partido.german
-            ? `<span class="prediccion">${partido.german.home} - ${partido.german.away}</span>`
-            : `<span class="prediccion pendiente">— —</span>`;
+      const htmlPredGerman = partido.german
+        ? `<span class="prediccion">${partido.german.home} - ${partido.german.away}</span>`
+        : `<span class="prediccion pendiente">— —</span>`;
 
-          const htmlPredNoice = partido.angel
-            ? `<span class="prediccion">${partido.angel.home} - ${partido.angel.away}</span>`
-            : `<span class="prediccion pendiente">— —</span>`;
+      const htmlPredNoice = partido.angel
+        ? `<span class="prediccion">${partido.angel.home} - ${partido.angel.away}</span>`
+        : `<span class="prediccion pendiente">— —</span>`;
 
-          const fila = document.createElement('div');
-          fila.className = 'fila-partido';
-          fila.innerHTML = `
+      const fila = document.createElement('div');
+      fila.className = 'fila-partido';
+      fila.innerHTML = `
 
-            <!-- IZQUIERDA: Germán -->
-            <div class="panel-lateral panel-german">
-              <span class="nombre-jugador">Germán</span>
-              ${htmlPredGerman}
-              ${crearBadge(resGerman)}
+        <div class="panel-lateral panel-german">
+          <span class="nombre-jugador">Germán</span>
+          ${htmlPredGerman}
+          ${crearBadge(resGerman)}
+        </div>
+
+        <div class="panel-centro">
+          <div class="fila-equipos">
+            <div class="fila-equipos-nombres">
+              ${crearBandera(partido.home)}
+              <span class="nombre-equipo">${partido.home.nombre}</span>
+              <span class="texto-vs">vs</span>
+              <span class="nombre-equipo">${partido.away.nombre}</span>
+              ${crearBandera(partido.away)}
             </div>
+          </div>
+          ${htmlResultado}
+          <span class="hora-partido">${partido.hora}</span>
+        </div>
 
-            <!-- CENTRO: partido -->
-            <div class="panel-centro">
-              <div class="fila-equipos">
-                <div class="fila-equipos-nombres">
-                  ${crearBandera(partido.home)}
-                  <span class="nombre-equipo">${partido.home.nombre}</span>
-                  <span class="texto-vs">vs</span>
-                  <span class="nombre-equipo">${partido.away.nombre}</span>
-                  ${crearBandera(partido.away)}
-                </div>
-              </div>
-              ${htmlResultado}
-              <span class="hora-partido">${partido.hora}</span>
-            </div>
+        <div class="panel-lateral panel-noice">
+          <span class="nombre-jugador">Noice</span>
+          ${htmlPredNoice}
+          ${crearBadge(resNoice)}
+        </div>
 
-            <!-- DERECHA: Noice -->
-            <div class="panel-lateral panel-noice">
-              <span class="nombre-jugador">Noice</span>
-              ${htmlPrednoice}
-              ${crearBadge(resnoice)}
-            </div>
+      `;
 
-          `;
+      bloqueDia.appendChild(fila);
+    });
 
-          bloqueDia.appendChild(fila);
-        });
+    contenedor.appendChild(bloqueDia);
+  });
 
-        contenedor.appendChild(bloqueDia);
-      });
-
-      document.getElementById('puntos-german').textContent = totalGerman;
-      document.getElementById('puntos-noice').textContent = totalAngel;
-    }
+  document.getElementById('puntos-german').textContent = totalGerman;
+  document.getElementById('puntos-noice').textContent  = totalNoice;
+}
 
     construirPagina();
 
