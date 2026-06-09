@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Predict Mundial — Ángel vs Germán</title>
+  <title>Predict Mundial</title>
   <link rel="stylesheet" href="estilos.css">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
@@ -24,9 +24,9 @@
       <span class="elguion">|</span>
 
       <div class="jugador">
-        <span class="punto punto-angel"></span>
-        <span>Ángel</span>
-        <span class="puntos-grandes puntos-angel" id="puntos-angel">0</span>
+        <span class="punto punto-noice"></span>
+        <span>Noice</span>
+        <span class="puntos-grandes puntos-noice" id="puntos-noice">0</span>
       </div>
 
     </div>
@@ -119,7 +119,7 @@
     /* ── CONSTRUCCIÓN DE PÁGINA ── */
     function construirPagina() {
       let totalGerman = 0;
-      let totalAngel  = 0;
+      let totalnoice  = 0;
 
       const contenedor = document.getElementById('contenedor-partidos');
       contenedor.innerHTML = '';
@@ -137,10 +137,10 @@
         dia.partidos.forEach(partido => {
 
           const resGerman = calcularPuntos(partido.actual, partido.german);
-          const resAngel  = calcularPuntos(partido.actual, partido.angel);
+          const resnoice  = calcularPuntos(partido.actual, partido.noice);
 
           if (resGerman !== null) totalGerman += puntosReales(resGerman);
-          if (resAngel  !== null) totalAngel  += puntosReales(resAngel);
+          if (resnoice  !== null) totalnoice  += puntosReales(resnoice);
 
           const htmlResultado = partido.actual
             ? `<span class="resultado-real">${partido.actual.home} - ${partido.actual.away}</span>`
@@ -150,8 +150,8 @@
             ? `<span class="prediccion">${partido.german.home} - ${partido.german.away}</span>`
             : `<span class="prediccion pendiente">— —</span>`;
 
-          const htmlPredAngel = partido.angel
-            ? `<span class="prediccion">${partido.angel.home} - ${partido.angel.away}</span>`
+          const htmlPrednoice = partido.noice
+            ? `<span class="prediccion">${partido.noice.home} - ${partido.noice.away}</span>`
             : `<span class="prediccion pendiente">— —</span>`;
 
           const fila = document.createElement('div');
@@ -180,11 +180,11 @@
               <span class="hora-partido">${partido.hora}</span>
             </div>
 
-            <!-- DERECHA: Ángel -->
-            <div class="panel-lateral panel-angel">
-              <span class="nombre-jugador">Ángel</span>
-              ${htmlPredAngel}
-              ${crearBadge(resAngel)}
+            <!-- DERECHA: Noice -->
+            <div class="panel-lateral panel-noice">
+              <span class="nombre-jugador">Noice</span>
+              ${htmlPrednoice}
+              ${crearBadge(resnoice)}
             </div>
 
           `;
@@ -196,7 +196,7 @@
       });
 
       document.getElementById('puntos-german').textContent = totalGerman;
-      document.getElementById('puntos-angel').textContent  = totalAngel;
+      document.getElementById('puntos-noice').textContent  = totalnoice;
     }
 
     construirPagina();
