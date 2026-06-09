@@ -137,7 +137,7 @@
         dia.partidos.forEach(partido => {
 
           const resGerman = calcularPuntos(partido.actual, partido.german);
-          const resnoice  = calcularPuntos(partido.actual, partido.noice);
+          const resAngel = calcularPuntos(partido.actual, partido.angel);
 
           if (resGerman !== null) totalGerman += puntosReales(resGerman);
           if (resnoice  !== null) totalnoice  += puntosReales(resnoice);
@@ -150,8 +150,8 @@
             ? `<span class="prediccion">${partido.german.home} - ${partido.german.away}</span>`
             : `<span class="prediccion pendiente">— —</span>`;
 
-          const htmlPrednoice = partido.noice
-            ? `<span class="prediccion">${partido.noice.home} - ${partido.noice.away}</span>`
+          const htmlPredNoice = partido.angel
+            ? `<span class="prediccion">${partido.angel.home} - ${partido.angel.away}</span>`
             : `<span class="prediccion pendiente">— —</span>`;
 
           const fila = document.createElement('div');
