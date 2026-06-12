@@ -39,7 +39,7 @@ const PARTIDOS_POR_DIA = [
         home: { nombre: "Canadá", flag: "images/canada.png" },
         away: { nombre: "Bosnia y Herzegovina", flag: "images/bosnia.png" },
         hora: "21:00",
-        actual: null,
+        actual: { home: 1, away: 1 },
         angel: { home: 0, away: 1 },
         german: { home: 2, away: 0 },
         abraham: { home: 0, away: 0 },
