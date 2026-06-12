@@ -31,11 +31,9 @@ const PARTIDOS_POR_DIA = [
         home: { nombre: "Corea del Sur", flag: "images/coreasur.png" },
         away: { nombre: "República Checa", flag: "images/repcheca.png" },
         hora: "04:00",
-        actual: null,
+        actual: { home: 2, away: 1 },
         angel: { home: 2, away: 2 },
         german: { home: 1, away: 1 },
-        abraham: { home: 0, away: 2 },
-        elena: { home: 1, away: 0 },
       },
       {
         home: { nombre: "Canadá", flag: "images/canada.png" },
