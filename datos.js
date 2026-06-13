@@ -65,7 +65,7 @@ const PARTIDOS_POR_DIA = [
         home: { nombre: "Estados Unidos", flag: "images/eeuu.png" },
         away: { nombre: "Paraguay", flag: "images/paraguay.png" },
         hora: "03:00",
-        actual: null,
+        actual: { home: 4, away: 1 },
         angel: { home: 0, away: 0 },
         german: { home: 1, away: 2 },
         abraham: { home: 1, away: 2 },
