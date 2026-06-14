@@ -42,8 +42,6 @@ const PARTIDOS_POR_DIA = [
         actual: { home: 1, away: 1 },
         angel: { home: 0, away: 1 },
         german: { home: 2, away: 0 },
-        abraham: { home: 0, away: 0 },
-        elena: { home: 1, away: 0 },
       },
     ]
   },
@@ -68,8 +66,6 @@ const PARTIDOS_POR_DIA = [
         actual: { home: 4, away: 1 },
         angel: { home: 0, away: 0 },
         german: { home: 1, away: 2 },
-        abraham: { home: 1, away: 2 },
-        elena: { home: 1, away: 1 },
       },
       {
         home: { nombre: "Catar", flag: "images/catar.png" },
@@ -78,8 +74,6 @@ const PARTIDOS_POR_DIA = [
         actual: { home: 1, away: 1 },
         angel: { home: 1, away: 3 },
         german: { home: 0, away: 2 },
-        abraham: { home: 1, away: 1 },
-        elena: { home: 1, away: 2 },
       },
     ]
   },
@@ -104,8 +98,6 @@ const PARTIDOS_POR_DIA = [
         actual: { home: 1, away: 1 },
         angel: { home: 2, away: 2 },
         german: { home: 2, away: 1 },
-        abraham: { home: 3, away: 2 },
-        elena: { home: 2, away: 3 },
       },
       {
         home: { nombre: "Haiti", flag: "images/haiti.png" },
@@ -114,8 +106,6 @@ const PARTIDOS_POR_DIA = [
         actual: { home: 0, away: 1 },
         angel: { home: 0, away: 3 },
         german: { home: 0, away: 2 },
-        abraham: { home: 0, away: 0 },
-        elena: { home: 0, away: 2 },
       },
       {
         home: { nombre: "Australia", flag: "images/australia.png" },
@@ -124,18 +114,14 @@ const PARTIDOS_POR_DIA = [
         actual: { home: 2, away: 0 },
         angel: { home: 0, away: 1 },
         german: { home: 1, away: 1 },
-        abraham: { home: 0, away: 3 },
-        elena: { home: 2, away: 2 },
       },
       {
         home: { nombre: "Alemania", flag: "images/alemania.png" },
         away: { nombre: "Curazao", flag: "images/curazao.png" },
         hora: "19:00",
-        actual: null,
+        actual: { home: 7, away: 1 },
         angel: { home: 5, away: 0 },
         german: { home: 4, away: 0 },
-        abraham: { home: 3, away: 0 },
-        elena: { home: 3, away: 1 },
       },
       {
         home: { nombre: "Países Bajos", flag: "images/pb.png" },
