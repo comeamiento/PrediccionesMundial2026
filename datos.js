@@ -127,7 +127,7 @@ const PARTIDOS_POR_DIA = [
         home: { nombre: "Países Bajos", flag: "images/pb.png" },
         away: { nombre: "Japón", flag: "images/japon.png" },
         hora: "22:00",
-        actual: null,
+        actual: { home: 2, away: 2 },
         angel: { home: 1, away: 1 },
         german: { home: 1, away: 2 },
         abraham: { home: 2, away: 2 },
