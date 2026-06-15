@@ -175,7 +175,7 @@ const PARTIDOS_POR_DIA = [
         home: { nombre: "Bélgica", flag: "images/belgica.png" },
         away: { nombre: "Egipto", flag: "images/egipto.png" },
         hora: "21:00",
-        actual: null,
+        actual: { home: 1, away: 1 },
         angel: { home: 0, away: 0 },
         german: { home: 1, away: 0 },
       },
