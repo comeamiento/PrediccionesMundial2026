@@ -130,8 +130,6 @@ const PARTIDOS_POR_DIA = [
         actual: { home: 2, away: 2 },
         angel: { home: 1, away: 1 },
         german: { home: 1, away: 2 },
-        abraham: { home: 2, away: 2 },
-        elena: { home: 2, away: 1 },
       },
     ]
   },
@@ -156,8 +154,6 @@ const PARTIDOS_POR_DIA = [
         actual: { home: 1, away: 0 },
         angel: { home: 0, away: 2 },
         german: { home: 0, away: 2 },
-        abraham: { home: 1, away: 1 },
-        elena: { home: 1, away: 2 },
       },
       {
         home: { nombre: "Suecia", flag: "images/suecia.png" },
@@ -166,18 +162,14 @@ const PARTIDOS_POR_DIA = [
         actual: { home: 5, away: 1 },
         angel: { home: 2, away: 0 },
         german: { home: 1, away: 0 },
-        abraham: { home: 1, away: 1 },
-        elena: { home: 2, away: 0 },
       },
       {
         home: { nombre: "España", flag: "images/espana.png" },
         away: { nombre: "Cabo Verde", flag: "images/cv.png" },
         hora: "18:00",
-        actual: null,
+        actual: { home: 0, away: 0 },
         angel: { home: 4, away: 1 },
         german: { home: 4, away: 0 },
-        abraham: { home: 3, away: 0 },
-        elena: { home: 4, away: 2 },
       },
       {
         home: { nombre: "Bélgica", flag: "images/belgica.png" },
@@ -186,8 +178,6 @@ const PARTIDOS_POR_DIA = [
         actual: null,
         angel: { home: 0, away: 0 },
         german: { home: 1, away: 0 },
-        abraham: { home: 2, away: 1 },
-        elena: { home: 1, away: 0 },
       },
     ]
   },
