@@ -199,11 +199,9 @@ const PARTIDOS_POR_DIA = [
         home: { nombre: "Arabia Saudí", flag: "images/arabia.png" },
         away: { nombre: "Uruguay", flag: "images/uruguay.png" },
         hora: "00:00",
-        actual: null,
+        actual: { home: 1, away: 1 },
         angel: { home: 1, away: 2 },
         german: { home: 1, away: 2 },
-        abraham: { home: 0, away: 1 },
-        elena: { home: 0, away: 1 },
       },
       {
         home: { nombre: "Irán", flag: "images/iran.png" },
@@ -212,8 +210,6 @@ const PARTIDOS_POR_DIA = [
         actual: { home: 2, away: 2 },
         angel: { home: 2, away: 0 },
         german: { home: 1, away: 1 },
-        abraham: { home: 2, away: 1 },
-        elena: { home: 2, away: 3 },
       },
       {
         home: { nombre: "Francia", flag: "images/francia.png" },
@@ -222,8 +218,6 @@ const PARTIDOS_POR_DIA = [
         actual: null,
         angel: { home: 3, away: 2 },
         german: { home: 3, away: 1 },
-        abraham: { home: 2, away: 2 },
-        elena: { home: 4, away: 3 },
       },
     ]
   },
