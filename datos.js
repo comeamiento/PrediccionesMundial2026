@@ -209,7 +209,7 @@ const PARTIDOS_POR_DIA = [
         home: { nombre: "Irán", flag: "images/iran.png" },
         away: { nombre: "Nueva Zelanda", flag: "images/nz.png" },
         hora: "03:00",
-        actual: null,
+        actual: { home: 2, away: 2 },
         angel: { home: 2, away: 0 },
         german: { home: 1, away: 1 },
         abraham: { home: 2, away: 1 },
