@@ -258,8 +258,6 @@ const PARTIDOS_POR_DIA = [
         actual: { home: 3, away: 1 },
         angel: { home: 2, away: 1 },
         german: { home: 1, away: 1 },
-        abraham: { home: 1, away: 0 },
-        elena: { home: 1, away: 0 },
       },
       {
         home: { nombre: "Portugal", flag: "images/portugal.png" },
@@ -268,18 +266,14 @@ const PARTIDOS_POR_DIA = [
         actual: { home: 1, away: 1 },
         angel: { home: 3, away: 0 },
         german: { home: 3, away: 0 },
-        abraham: { home: 2, away: 0 },
-        elena: { home: 2, away: 1 },
       },
       {
         home: { nombre: "Inglaterra", flag: "images/inglaterra.png" },
         away: { nombre: "Croacia", flag: "images/croacia.png" },
         hora: "22:00",
-        actual: { home: 2, away: 2 },
+        actual: { home: 4, away: 2 },
         angel: { home: 2, away: 2 },
         german: { home: 2, away: 1 },
-        abraham: { home: 2, away: 2 },
-        elena: { home: 3, away: 1 },
       },
     ]
   },
@@ -301,21 +295,17 @@ const PARTIDOS_POR_DIA = [
         home: { nombre: "Ghana", flag: "images/ghana.png" },
         away: { nombre: "Panamá", flag: "images/panama.png" },
         hora: "01:00",
-        actual: null,
+        actual: { home: 1, away: 0 },
         angel: { home: 0, away: 0 },
         german: { home: 0, away: 1 },
-        abraham: { home: 0, away: 0 },
-        elena: { home: 2, away: 1 },
       },
       {
         home: { nombre: "Uzbekistán", flag: "images/uzbekistan.png" },
         away: { nombre: "Colombia", flag: "images/colombia.png" },
         hora: "04:00",
-        actual: null,
+        actual: { home: 1, away: 3 },
         angel: { home: 1, away: 3 },
         german: { home: 0, away: 3 },
-        abraham: { home: 1, away: 1 },
-        elena: { home: 1, away: 2 },
       },
       {
         home: { nombre: "República Checa", flag: "images/repcheca.png" },
@@ -324,8 +314,7 @@ const PARTIDOS_POR_DIA = [
         actual: null,
         angel: { home: 3, away: 1 },
         german: { home: 1, away: 2 },
-        abraham: { home: 1, away: 2 },
-        elena: { home: 2, away: 2 },
+
       },
       {
         home: { nombre: "Suiza", flag: "images/suiza.png" },
@@ -334,8 +323,7 @@ const PARTIDOS_POR_DIA = [
         actual: null,
         angel: { home: 2, away: 2 },
         german: { home: 2, away: 1 },
-        abraham: { home: 1, away: 0 },
-        elena: { home: 3, away: 0 },
+
       },
     ]
   },
