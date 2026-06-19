@@ -311,7 +311,7 @@ const PARTIDOS_POR_DIA = [
         home: { nombre: "República Checa", flag: "images/repcheca.png" },
         away: { nombre: "Sudáfrica", flag: "images/sudafrica.png" },
         hora: "18:00",
-        actual: null,
+        actual: { home: 1, away: 1 },
         angel: { home: 3, away: 1 },
         german: { home: 1, away: 2 },
 
@@ -320,7 +320,7 @@ const PARTIDOS_POR_DIA = [
         home: { nombre: "Suiza", flag: "images/suiza.png" },
         away: { nombre: "Bosnia y Herzegovina", flag: "images/bosnia.png" },
         hora: "21:00",
-        actual: null,
+        actual: { home: 4, away: 1 },
         angel: { home: 2, away: 2 },
         german: { home: 2, away: 1 },
 
@@ -345,21 +345,18 @@ const PARTIDOS_POR_DIA = [
         home: { nombre: "Canada", flag: "images/canada.png" },
         away: { nombre: "Catar", flag: "images/catar.png" },
         hora: "00:00",
-        actual: null,
+        actual: { home: 6, away: 0 },
         angel: { home: 1, away: 0 },
         german: { home: 2, away: 1 },
-        abraham: { home: 1, away: 1 },
-        elena: { home: 3, away: 1 },
       },
       {
         home: { nombre: "México", flag: "images/mexico.png" },
         away: { nombre: "Corea del Sur", flag: "images/coreasur.png" },
         hora: "03:00",
-        actual: null,
+        actual: { home: 1, away: 0 },
         angel: { home: 0, away: 1 },
         german: { home: 1, away: 2 },
-        abraham: { home: 2, away: 1 },
-        elena: { home: 2, away: 1 },
+
       },
       {
         home: { nombre: "Estados Unidos", flag: "images/eeuu.png" },
