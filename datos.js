@@ -912,7 +912,7 @@ const PARTIDOS_POR_DIA = [
       },
       {
         home: { nombre: "Costa de Marfil", flag: "images/cdm.png" },
-        away: { nombre: "2º Grupo I", flag: "images/pd.png" },
+        away: { nombre: "Noruega", flag: "images/noruega.png" },
         hora: "19:00",
         actual: null,
         angel: null,
@@ -921,7 +921,7 @@ const PARTIDOS_POR_DIA = [
         elena: null,
       },
       {
-        home: { nombre: "1º Grupo I", flag: "images/pd.png" },
+        home: { nombre: "Francia", flag: "images/francia.png" },
         away: { nombre: "3º Grupo C/D/F/G/H", flag: "images/pd.png" },
         hora: "23:00",
         actual: null,
