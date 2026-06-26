@@ -637,8 +637,6 @@ const PARTIDOS_POR_DIA = [
         actual: { home: 0, away: 3 },
         angel: { home: 2, away: 2 },
         german: { home: 1, away: 3 },
-        abraham: { home: 1, away: 3 },
-        elena: { home: 2, away: 3 },
       },
       {
         home: { nombre: "Marruecos", flag: "images/marruecos.png" },
@@ -647,8 +645,6 @@ const PARTIDOS_POR_DIA = [
         actual: { home: 4, away: 2 },
         angel: { home: 4, away: 1 },
         german: { home: 1, away: 1 },
-        abraham: { home: 3, away: 0 },
-        elena: { home: 2, away: 0 },
       },
       {
         home: { nombre: "República Checa", flag: "images/repcheca.png" },
@@ -657,8 +653,6 @@ const PARTIDOS_POR_DIA = [
         actual: { home: 0, away: 3 },
         angel: { home: 2, away: 1 },
         german: { home: 1, away: 2 },
-        abraham: { home: 2, away: 2 },
-        elena: { home: 1, away: 1 },
       },
       {
         home: { nombre: "Sudáfrica", flag: "images/sudafrica.png" },
@@ -667,8 +661,6 @@ const PARTIDOS_POR_DIA = [
         actual: { home: 1, away: 0 },
         angel: { home: 1, away: 3 },
         german: { home: 0, away: 0 },
-        abraham: { home: 1, away: 1 },
-        elena: { home: 2, away: 2 },
       },
       {
         home: { nombre: "Curazao", flag: "images/curazao.png" },
@@ -677,8 +669,6 @@ const PARTIDOS_POR_DIA = [
         actual: { home: 0, away: 2 },
         angel: { home: 1, away: 3 },
         german: { home: 0, away: 1 },
-        abraham: { home: 1, away: 1 },
-        elena: { home: 0, away: 1 },
       },
       {
         home: { nombre: "Ecuador", flag: "images/ecuador.png" },
@@ -687,8 +677,6 @@ const PARTIDOS_POR_DIA = [
         actual: { home: 2, away: 1 },
         angel: { home: 1, away: 4 },
         german: { home: 1, away: 3 },
-        abraham: { home: 1, away: 3 },
-        elena: { home: 2, away: 1 },
       },
     ]
   },
@@ -713,8 +701,6 @@ const PARTIDOS_POR_DIA = [
         actual: { home: 1, away: 1 },
         angel: { home: 1, away: 1 },
         german: { home: 2, away: 0 },
-        abraham: { home: 1, away: 2 },
-        elena: { home: 1, away: 1 },
       },
       {
         home: { nombre: "Túnez", flag: "images/tunez.png" },
@@ -723,8 +709,6 @@ const PARTIDOS_POR_DIA = [
         actual: { home: 1, away: 3 },
         angel: { home: 0, away: 3 },
         german: { home: 0, away: 1 },
-        abraham: { home: 1, away: 2 },
-        elena: { home: 0, away: 1 },
       },
       {
         home: { nombre: "Turquía", flag: "images/turquia.png" },
@@ -733,8 +717,6 @@ const PARTIDOS_POR_DIA = [
         actual: { home: 3, away: 2 },
         angel: { home: 2, away: 2 },
         german: { home: 0, away: 2 },
-        abraham: { home: 2, away: 2 },
-        elena: { home: 1, away: 2 },
       },
       {
         home: { nombre: "Paraguay", flag: "images/paraguay.png" },
@@ -743,8 +725,6 @@ const PARTIDOS_POR_DIA = [
         actual: { home: 0, away: 0 },
         angel: { home: 1, away: 0 },
         german: { home: 1, away: 1 },
-        abraham: { home: 1, away: 0 },
-        elena: { home: 2, away: 3 },
       },
       {
         home: { nombre: "Noruega", flag: "images/noruega.png" },
@@ -753,8 +733,6 @@ const PARTIDOS_POR_DIA = [
         actual: null,
         angel: { home: 4, away: 4 },
         german: { home: 3, away: 2 },
-        abraham: { home: 1, away: 2 },
-        elena: { home: 1, away: 4 },
       },
       {
         home: { nombre: "Senegal", flag: "images/senegal.png" },
@@ -763,8 +741,6 @@ const PARTIDOS_POR_DIA = [
         actual: null,
         angel: { home: 3, away: 1 },
         german: { home: 1, away: 1 },
-        abraham: { home: 0, away: 0 },
-        elena: { home: 1, away: 0 },
       },
     ]
   },
@@ -789,8 +765,6 @@ const PARTIDOS_POR_DIA = [
         actual: null,
         angel: { home: 0, away: 2 },
         german: { home: 0, away: 2 },
-        abraham: { home: 1, away: 0 },
-        elena: { home: 2, away: 1 },
       },
       {
         home: { nombre: "Uruguay", flag: "images/uruguay.png" },
@@ -799,8 +773,6 @@ const PARTIDOS_POR_DIA = [
         actual: null,
         angel: { home: 1, away: 2 },
         german: { home: 1, away: 3 },
-        abraham: { home: 0, away: 2 },
-        elena: { home: 2, away: 1 },
       },
       {
         home: { nombre: "Egipto", flag: "images/egipto.png" },
@@ -809,8 +781,6 @@ const PARTIDOS_POR_DIA = [
         actual: null,
         angel: { home: 0, away: 1 },
         german: { home: 1, away: 1 },
-        abraham: { home: 1, away: 1 },
-        elena: { home: 1, away: 0 },
       },
       {
         home: { nombre: "Nueva Zelanda", flag: "images/nz.png" },
@@ -819,8 +789,6 @@ const PARTIDOS_POR_DIA = [
         actual: null,
         angel: { home: 1, away: 3 },
         german: { home: 0, away: 2 },
-        abraham: { home: 0, away: 2 },
-        elena: { home: 0, away: 1 },
       },
       {
         home: { nombre: "Panamá", flag: "images/panama.png" },
@@ -829,8 +797,6 @@ const PARTIDOS_POR_DIA = [
         actual: null,
         angel: { home: 0, away: 5 },
         german: { home: 1, away: 2 },
-        abraham: { home: 0, away: 2 },
-        elena: { home: 2, away: 2 },
       },
       {
         home: { nombre: "Croacia", flag: "images/croacia.png" },
@@ -839,8 +805,6 @@ const PARTIDOS_POR_DIA = [
         actual: null,
         angel: { home: 3, away: 1 },
         german: { home: 2, away: 1 },
-        abraham: { home: 2, away: 0 },
-        elena: { home: 3, away: 1 },
       },
     ]
   },
@@ -865,8 +829,6 @@ const PARTIDOS_POR_DIA = [
         actual: null,
         angel: { home: 1, away: 2 },
         german: { home: 1, away: 3 },
-        abraham: { home: 1, away: 2 },
-        elena: { home: 1, away: 1 },
       },
       {
         home: { nombre: "R.D. Congo", flag: "images/rdcongo.png" },
@@ -875,8 +837,6 @@ const PARTIDOS_POR_DIA = [
         actual: null,
         angel: { home: 1, away: 1 },
         german: { home: 2, away: 2 },
-        abraham: { home: 1, away: 0 },
-        elena: { home: 0, away: 0 },
       },
       {
         home: { nombre: "Argelia", flag: "images/argelia.png" },
@@ -885,8 +845,6 @@ const PARTIDOS_POR_DIA = [
         actual: null,
         angel: { home: 1, away: 1 },
         german: { home: 0, away: 1 },
-        abraham: { home: 1, away: 1 },
-        elena: { home: 0, away: 1 },
       },
       {
         home: { nombre: "Jordania", flag: "images/jordania.png" },
@@ -895,8 +853,332 @@ const PARTIDOS_POR_DIA = [
         actual: null,
         angel: { home: 1, away: 3 },
         german: { home: 0, away: 4 },
-        abraham: { home: 0, away: 2 },
-        elena: { home: 1, away: 2 },
+      },
+    ]
+  },
+
+
+  
+  {
+    fecha: "Domingo, 28 de junio (DIECISEISAVOS DE FINAL)",
+    partidos: [
+      {
+        home: { nombre: "Sudáfrica", flag: "images/sudafrica.png" },
+        away: { nombre: "Canadá", flag: "images/canada.png" },
+        hora: "21:00",
+        actual: null,
+        angel: null,
+        german: null,
+      },
+    ]
+  },
+
+
+
+  {
+    fecha: "Lunes, 29 de junio (DIECISEISAVOS DE FINAL)",
+    partidos: [
+      {
+        home: { nombre: "Brasil", flag: "images/brasil.png" },
+        away: { nombre: "Japón", flag: "images/japon.png" },
+        hora: "19:00",
+        actual: null,
+        angel: null,
+        german: null,
+      },
+      {
+        home: { nombre: "Alemania", flag: "images/alemania.png" },
+        away: { nombre: "3º Grupo A/B/C/D/F", flag: "images/pd.png" },
+        hora: "22:30",
+        actual: null,
+        angel: null,
+        german: null,
+      },
+    ]
+  },
+
+  {
+    fecha: "Martes, 30 de junio (DIECISEISAVOS DE FINAL)",
+    partidos: [
+      {
+        home: { nombre: "Países Bajos", flag: "images/pb.png" },
+        away: { nombre: "Marruecos", flag: "images/marruecos.png" },
+        hora: "03:00",
+        actual: null,
+        angel: null,
+        german: null,
+        abraham: null,
+        elena: null,
+      },
+      {
+        home: { nombre: "Costa de Marfil", flag: "images/cdm.png" },
+        away: { nombre: "2º Grupo I", flag: "images/pd.png" },
+        hora: "19:00",
+        actual: null,
+        angel: null,
+        german: null,
+        abraham: null,
+        elena: null,
+      },
+      {
+        home: { nombre: "1º Grupo I", flag: "images/pd.png" },
+        away: { nombre: "3º Grupo C/D/F/G/H", flag: "images/pd.png" },
+        hora: "23:00",
+        actual: null,
+        angel: null,
+        german: null,
+        abraham: null,
+        elena: null,
+      },
+    ]
+  },
+
+
+  {
+    fecha: "Miércoles, 1 de julio (DIECISEISAVOS DE FINAL)",
+    partidos: [
+      {
+        home: { nombre: "México", flag: "images/mexico.png" },
+        away: { nombre: "3º Grupo C/E/F/H/I", flag: "images/pd.png" },
+        hora: "03:00",
+        actual: null,
+        angel: null,
+        german: null,
+        abraham: null,
+        elena: null,
+      },
+      {
+        home: { nombre: "1º Grupo L", flag: "images/pd.png" },
+        away: { nombre: "3º Grupo E/H/I/J/K", flag: "images/pd.png" },
+        hora: "18:00",
+        actual: null,
+        angel: null,
+        josejuan: null,
+        abraham: null,
+        elena: null,
+      },
+      {
+        home: { nombre: "1º Grupo G", flag: "images/pd.png" },
+        away: { nombre: "3º Grupo A/E/H/I/J", flag: "images/pd.png" },
+        hora: "22:00",
+        actual: null,
+        angel: null,
+        german: null,
+        abraham: null,
+        elena: null,
+      },
+    ]
+  },
+
+
+
+
+
+  {
+    fecha: "Jueves, 2 de julio (DIECISEISAVOS DE FINAL)",
+    partidos: [
+      {
+        home: { nombre: "Estados Unidos", flag: "images/eeuu.png" },
+        away: { nombre: "Bosnia y Herzegovina", flag: "images/bosnia.png" },
+        hora: "02:00",
+        actual: null,
+        angel: null,
+        german: null,
+        abraham: null,
+        elena: null,
+      },
+      {
+        home: { nombre: "1º Grupo H", flag: "images/pd.png" },
+        away: { nombre: "2º Grupo J", flag: "images/pd.png" },
+        hora: "21:00",
+        actual: null,
+        angel: null,
+        german: null,
+        abraham: null,
+        elena: null,
+      },
+    ]
+  },
+
+
+
+
+  {
+    fecha: "Viernes, 3 de julio (DIECISEISAVOS DE FINAL)",
+    partidos: [
+      {
+        home: { nombre: "2º Grupo K", flag: "images/pd.png" },
+        away: { nombre: "2º Grupo L", flag: "images/pd.png" },
+        hora: "01:00",
+        actual: null,
+        angel: null,
+        german: null,
+        abraham: null,
+        elena: null,
+      },
+      {
+        home: { nombre: "Suiza", flag: "images/suiza.png" },
+        away: { nombre: "3º Grupo E/F/G/I/J", flag: "images/pd.png" },
+        hora: "05:00",
+        actual: null,
+        angel: null,
+        josejuan: null,
+        abraham: null,
+        elena: null,
+      },
+      {
+        home: { nombre: "Australia", flag: "images/australia.png" },
+        away: { nombre: "2º Grupo G", flag: "images/pd.png" },
+        hora: "20:00",
+        actual: null,
+        angel: null,
+        german: null,
+        abraham: null,
+        elena: null,
+      },
+    ]
+  },
+
+
+
+
+
+  {
+    fecha: "Sábado, 4 de julio (DIECISEISAVOS DE FINAL)",
+    partidos: [
+      {
+        home: { nombre: "Argentina", flag: "images/argentina.png" },
+        away: { nombre: "2º Grupo H", flag: "images/pd.png" },
+        hora: "00:00",
+        actual: null,
+        angel: null,
+        german: null,
+        abraham: null,
+        elena: null,
+      },
+      {
+        home: { nombre: "1º Grupo K", flag: "images/pd.png" },
+        away: { nombre: "3º Grupo D/E/I/J/L", flag: "images/pd.png" },
+        hora: "03:30",
+        actual: null,
+        angel: null,
+        german: null,
+        abraham: null,
+        elena: null,
+      },
+    ]
+  },
+
+
+
+
+
+
+
+
+
+
+  {
+    fecha: "Sábado, 4 de julio (OCTAVOS DE FINAL)",
+    partidos: [
+      {
+        home: { nombre: "Por definir", flag: "images/pd.png" },
+        away: { nombre: "Por definir", flag: "images/pd.png" },
+        hora: "19:00",
+        actual: null,
+        angel: null,
+        german: null,
+        abraham: null,
+        elena: null,
+      },
+      {
+        home: { nombre: "Por definir", flag: "images/pd.png" },
+        away: { nombre: "Por definir", flag: "images/pd.png" },
+        hora: "23:00",
+        actual: null,
+        angel: null,
+        german: null,
+        abraham: null,
+        elena: null,
+      },
+    ]
+  },
+
+
+  {
+    fecha: "Domingo, 5 de julio (OCTAVOS DE FINAL)",
+    partidos: [
+      {
+        home: { nombre: "Por definir", flag: "images/pd.png" },
+        away: { nombre: "Por definir", flag: "images/pd.png" },
+        hora: "22:00",
+        actual: null,
+        angel: null,
+        german: null,
+        abraham: null,
+        elena: null,
+      },
+    ]
+  },
+
+  {
+    fecha: "Lunes, 6 de julio (OCTAVOS DE FINAL)",
+    partidos: [
+      {
+        home: { nombre: "Por definir", flag: "images/pd.png" },
+        away: { nombre: "Por definir", flag: "images/pd.png" },
+        hora: "02:00",
+        actual: null,
+        angel: null,
+        german: null,
+        abraham: null,
+        elena: null,
+      },
+      {
+        home: { nombre: "Por definir", flag: "images/pd.png" },
+        away: { nombre: "Por definir", flag: "images/pd.png" },
+        hora: "21:00",
+        actual: null,
+        angel: null,
+        german: null,
+        abraham: null,
+        elena: null,
+      },
+    ]
+  },
+
+  {
+    fecha: "Martes, 7 de julio (OCTAVOS DE FINAL)",
+    partidos: [
+      {
+        home: { nombre: "Por definir", flag: "images/pd.png" },
+        away: { nombre: "Por definir", flag: "images/pd.png" },
+        hora: "02:00",
+        actual: null,
+        angel: null,
+        german: null,
+        abraham: null,
+        elena: null,
+      },
+      {
+        home: { nombre: "Por definir", flag: "images/pd.png" },
+        away: { nombre: "Por definir", flag: "images/pd.png" },
+        hora: "18:00",
+        actual: null,
+        angel: null,
+        german: null,
+        abraham: null,
+        elena: null,
+      },
+      {
+        home: { nombre: "Por definir", flag: "images/pd.png" },
+        away: { nombre: "Por definir", flag: "images/pd.png" },
+        hora: "22:00",
+        actual: null,
+        angel: null,
+        german: null,
+        abraham: null,
+        elena: null,
       },
     ]
   },
