@@ -904,7 +904,7 @@ const PARTIDOS_POR_DIA = [
         home: { nombre: "Países Bajos", flag: "images/pb.png" },
         away: { nombre: "Marruecos", flag: "images/marruecos.png" },
         hora: "03:00",
-        actual: null,
+        actual: { home: 1, away: 1 },
         angel: { home: 3, away: 2 },
         german: { home: 1, away: 2 },
       },
@@ -1056,17 +1056,15 @@ const PARTIDOS_POR_DIA = [
     fecha: "Sábado, 4 de julio (OCTAVOS DE FINAL)",
     partidos: [
       {
-        home: { nombre: "Por definir", flag: "images/pd.png" },
-        away: { nombre: "Por definir", flag: "images/pd.png" },
+        home: { nombre: "Canadá", flag: "images/canada.png" },
+        away: { nombre: "Marruecos", flag: "images/marruecos.png" },
         hora: "19:00",
         actual: null,
         angel: null,
         german: null,
-        abraham: null,
-        elena: null,
       },
       {
-        home: { nombre: "Por definir", flag: "images/pd.png" },
+        home: { nombre: "Paraguay", flag: "images/paraguay.png" },
         away: { nombre: "Por definir", flag: "images/pd.png" },
         hora: "23:00",
         actual: null,
@@ -1083,7 +1081,7 @@ const PARTIDOS_POR_DIA = [
     fecha: "Domingo, 5 de julio (OCTAVOS DE FINAL)",
     partidos: [
       {
-        home: { nombre: "Por definir", flag: "images/pd.png" },
+        home: { nombre: "Brasil", flag: "images/brasil.png" },
         away: { nombre: "Por definir", flag: "images/pd.png" },
         hora: "22:00",
         actual: null,
